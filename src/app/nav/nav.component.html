@@ -4,7 +4,7 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
-    <button mat-button class="menu-button" routerLink="/home">
+    <button mat-button class="menu-button" routerLink="">
       <mat-icon>home</mat-icon>
       <span>Inicio</span>
   </button>
@@ -27,12 +27,12 @@
 
 <mat-divider></mat-divider>
 
-<button mat-button class="menu-button" routerLink="/cadastro">
+<button mat-button class="menu-button" routerLink="/ajuda">
     <mat-icon>help</mat-icon>
     <span>Ajuda</span>
 </button>
 
-<button mat-button class="menu-button" routerLink="/login">
+<button mat-button class="menu-button" routerLink="/info">
   <mat-icon>info</mat-icon>
   <span>info</span>
 </button>
@@ -55,6 +55,9 @@
         <mat-slide-toggle  [checked]="useDefault" (change)="toggle($event)" ></mat-slide-toggle>
       </div>
       <mat-icon style="margin-left: 8px;">bedtime</mat-icon>
+      <button mat-icon-button routerLink="/login">
+        <mat-icon>account_circle</mat-icon>
+      </button>
     </mat-toolbar>
       <router-outlet></router-outlet>
   </mat-sidenav-content>

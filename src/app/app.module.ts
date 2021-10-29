@@ -41,6 +41,22 @@ import { MatListModule } from '@angular/material/list';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+// materias component
+import { MatematicaComponent } from './materias/matematica/matematica.component';
+import { PortuguesComponent } from './materias/portugues/portugues.component';
+import { InglesComponent } from './materias/ingles/ingles.component';
+import { ArtesComponent } from './materias/artes/artes.component';
+import { EspanholComponent } from './materias/espanhol/espanhol.component';
+import { GeografiaComponent } from './materias/geografia/geografia.component';
+import { HistoriaComponent } from './materias/historia/historia.component';
+import { QuimicaComponent } from './materias/quimica/quimica.component';
+import { FisicaComponent } from './materias/fisica/fisica.component';
+import { LiteraturaComponent } from './materias/literatura/literatura.component';
+import { BiologiaComponent } from './materias/biologia/biologia.component';
 
 
 @NgModule({
@@ -58,6 +74,17 @@ import { MatMenuModule } from '@angular/material/menu';
     InfoComponent,
     AjudaComponent,
     MateriaPageComponent,
+    MatematicaComponent,
+    PortuguesComponent,
+    InglesComponent,
+    ArtesComponent,
+    EspanholComponent,
+    GeografiaComponent,
+    HistoriaComponent,
+    QuimicaComponent,
+    FisicaComponent,
+    LiteraturaComponent,
+    BiologiaComponent,
     
    
   ],
@@ -85,7 +112,11 @@ import { MatMenuModule } from '@angular/material/menu';
     MatSlideToggleModule,
     FormsModule,
     ReactiveFormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatButtonToggleModule,
+    MatPaginatorModule,
+    MatExpansionModule,
+    MatDatepickerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

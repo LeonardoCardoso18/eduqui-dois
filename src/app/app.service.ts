@@ -6,6 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AppService {
+  getDeliveries() {
+    throw new Error('Method not implemented.');
+  }
 
   constructor(public httpClient: HttpClient) { }
 
