@@ -3,6 +3,9 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const moongose = require('moongose');
+
+// moongose.connect(mongodb+srv:Lelis_card:<ecoeco11>@cluster0.hxulc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority);
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');

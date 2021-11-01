@@ -13,13 +13,12 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 // Layout
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms'
+import {FormsModule, ReactiveFormsModule,  } from '@angular/forms'
 // Components
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { CadastroComponent } from './cadastro/cadastro.component';
+
 import { PerfilComponent } from './perfil/perfil.component';
 import { VerificarEmailComponent } from './verificar-email/verificar-email.component';
 import { EsqueceuSenhaComponent } from './esqueceu-senha/esqueceu-senha.component';
@@ -28,6 +27,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { MateriaPageComponent } from './materia-page/materia-page.component';
 import { InfoComponent } from './info/info.component';
 import { AjudaComponent } from './ajuda/ajuda.component';
+import { LoginComponent } from './login-cadastro/login/login.component';
+import { CadastroComponent } from './login-cadastro/cadastro/cadastro.component';
 // Angular Material
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -45,6 +46,7 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
 // materias component
 import { MatematicaComponent } from './materias/matematica/matematica.component';
 import { PortuguesComponent } from './materias/portugues/portugues.component';
@@ -59,13 +61,13 @@ import { LiteraturaComponent } from './materias/literatura/literatura.component'
 import { BiologiaComponent } from './materias/biologia/biologia.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     HomeComponent,
-    LoginComponent,
-    CadastroComponent,
     PerfilComponent,
     VerificarEmailComponent,
     EsqueceuSenhaComponent,
@@ -85,6 +87,8 @@ import { BiologiaComponent } from './materias/biologia/biologia.component';
     FisicaComponent,
     LiteraturaComponent,
     BiologiaComponent,
+    LoginComponent,
+    CadastroComponent,
     
    
   ],
@@ -117,6 +121,7 @@ import { BiologiaComponent } from './materias/biologia/biologia.component';
     MatPaginatorModule,
     MatExpansionModule,
     MatDatepickerModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

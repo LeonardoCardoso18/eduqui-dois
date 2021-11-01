@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {CadastroComponent} from './cadastro/cadastro.component';
-import { LoginComponent } from './login/login.component';
+
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { PerfilComponent } from './perfil/perfil.component';
@@ -12,6 +11,8 @@ import {AjudaComponent} from './ajuda/ajuda.component';
 import {InfoComponent} from './info/info.component';
 import {MateriaPageComponent} from './materia-page/materia-page.component';
 import {ExerciciosComponent} from './exercicios/exercicios.component';
+import {LoginComponent} from './login-cadastro/login/login.component';
+import {CadastroComponent} from './login-cadastro/cadastro/cadastro.component';
 import { AuthGuard } from './services/auth.guard';
 // materias
 import { MatematicaComponent } from './materias/matematica/matematica.component';
