@@ -13,7 +13,8 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 // Layout
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
-import {FormsModule, ReactiveFormsModule,  } from '@angular/forms'
+import {FormsModule, ReactiveFormsModule  } from '@angular/forms';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 // Components
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -59,6 +60,8 @@ import { QuimicaComponent } from './materias/quimica/quimica.component';
 import { FisicaComponent } from './materias/fisica/fisica.component';
 import { LiteraturaComponent } from './materias/literatura/literatura.component';
 import { BiologiaComponent } from './materias/biologia/biologia.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+
 
 
 
@@ -89,7 +92,7 @@ import { BiologiaComponent } from './materias/biologia/biologia.component';
     BiologiaComponent,
     LoginComponent,
     CadastroComponent,
-    
+    SidebarComponent,
    
   ],
   imports: [
@@ -122,6 +125,8 @@ import { BiologiaComponent } from './materias/biologia/biologia.component';
     MatExpansionModule,
     MatDatepickerModule,
     MatFormFieldModule,
+    IvyCarouselModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,7 +4,7 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
-    <button mat-button class="menu-button" routerLink="">
+    <button mat-button class="menu-button" routerLink="/home">
       <mat-icon>home</mat-icon>
       <span>Inicio</span>
   </button>
@@ -59,6 +59,7 @@
         <mat-icon>account_circle</mat-icon>
       </button>
     </mat-toolbar>
+  
       <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -13,7 +13,7 @@ import {MateriaPageComponent} from './materia-page/materia-page.component';
 import {ExerciciosComponent} from './exercicios/exercicios.component';
 import {LoginComponent} from './login-cadastro/login/login.component';
 import {CadastroComponent} from './login-cadastro/cadastro/cadastro.component';
-import { AuthGuard } from './services/auth.guard';
+
 // materias
 import { MatematicaComponent } from './materias/matematica/matematica.component';
 import { PortuguesComponent } from './materias/portugues/portugues.component';
@@ -27,18 +27,20 @@ import { BiologiaComponent} from './materias/biologia/biologia.component'
 import { QuimicaComponent } from './materias/quimica/quimica.component';
 import { FisicaComponent } from './materias/fisica/fisica.component';
 
+import{SidebarComponent} from './sidebar/sidebar.component';
 const routes: Routes = [
-  {path: 'login', component: LoginComponent},
-  {path: '', component:HomeComponent, canActivate: [AuthGuard]},
+  {path: '', component: LoginComponent, },
+  {path: 'home', component:HomeComponent},
   {path: 'perfil', component: PerfilComponent},
   {path: 'nav', component: NavComponent},
-  {path: 'admin', component: AdminDashboardComponent, canActivate: [AuthGuard]},
+  {path: 'materia', component: MateriaPageComponent},
+  {path: 'admin', component: AdminDashboardComponent, },
   {path: 'cadastro', component: CadastroComponent},
   {path: 'verificar-email', component: VerificarEmailComponent},
   {path: 'esqueceu-senha', component: EsqueceuSenhaComponent},
   {path: 'ajuda', component: AjudaComponent},
   {path: 'info', component: InfoComponent},
-  {path: 'materia', component: MateriaPageComponent},
+  {path: 'side', component: SidebarComponent},
   {path: 'exercicios', component: ExerciciosComponent},
   {path: 'materia/matematica', component: MatematicaComponent},
   {path: 'materia/portugues', component: PortuguesComponent},
@@ -51,7 +53,7 @@ const routes: Routes = [
   {path: 'materia/biologia', component: BiologiaComponent},
   {path: 'materia/quimica', component: QuimicaComponent},
   {path: 'materia/fisica', component: FisicaComponent},
-];
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
