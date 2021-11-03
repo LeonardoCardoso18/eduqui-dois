@@ -27,7 +27,7 @@ import { BiologiaComponent} from './materias/biologia/biologia.component'
 import { QuimicaComponent } from './materias/quimica/quimica.component';
 import { FisicaComponent } from './materias/fisica/fisica.component';
 
-import{SidebarComponent} from './sidebar/sidebar.component';
+
 const routes: Routes = [
   {path: '', component: LoginComponent, },
   {path: 'home', component:HomeComponent},
@@ -40,7 +40,7 @@ const routes: Routes = [
   {path: 'esqueceu-senha', component: EsqueceuSenhaComponent},
   {path: 'ajuda', component: AjudaComponent},
   {path: 'info', component: InfoComponent},
-  {path: 'side', component: SidebarComponent},
+  
   {path: 'exercicios', component: ExerciciosComponent},
   {path: 'materia/matematica', component: MatematicaComponent},
   {path: 'materia/portugues', component: PortuguesComponent},

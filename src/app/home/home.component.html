@@ -1,23 +1,41 @@
- 
-<mat-card class="example-card, example-full-width" appearance="fill" style="max-width: fit-content;">
-  <mat-card-header>
-    
-    <mat-card-title>Seu app de estudos favorito</mat-card-title>
-    <mat-card-subtitle></mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image src="https://images.pexels.com/photos/1326947/pexels-photo-1326947.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-  <mat-card-content>
-    <h2 style="align-items: center;">
-      Por menor que seja o seu tempo de estudo, estude! Não tenha medo de crescer lentamente, tenha medo apenas de ficar parado!
-    </h2>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-raised-button color="primary" class="mat-button" routerLink="/materia"> Vamos lá</button>
-    
-  </mat-card-actions>
-</mat-card>
-
-
+<div class="content" style="color: 'primary';">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="100%" >
+      <mat-card class="mat-elevation-z4" >
+        <mat-card-header>
+         
+        </mat-card-header>
+        <div class="demo">
+          <h3></h3>
+          <carousel
+            [images]="images"
+            [cellWidth]="1000"
+            [height]="600"
+            [cellsToShow]="1"
+            [autoplay]="true"
+            [dots]="true"
+            arrowsTheme="dark"
+            [borderRadius]="10"
+            [margin]="20"
+            [loop]="true">
+            >
+          </carousel>
+        </div>  
+        <mat-card-content>
+          <h1 style="text-align: center;">
+            Acerte em tudo que puder acertar. Mas não se torture com seus erros
+          </h1>
+          <button style="width:100%;" mat-raised-button color="primary" routerLink="/materia" appearance="fill">
+            Vamos começar
+          </button>
+        </mat-card-content>
+        <mat-card-actions>
+          
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>  
 
 
  <div class="content" style="color: 'primary';">

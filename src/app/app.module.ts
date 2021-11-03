@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {CommonModule} from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
 // Router
@@ -15,16 +16,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
 import {FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+
 // Components
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
-
 import { PerfilComponent } from './perfil/perfil.component';
 import { VerificarEmailComponent } from './verificar-email/verificar-email.component';
 import { EsqueceuSenhaComponent } from './esqueceu-senha/esqueceu-senha.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
-import { HomePageComponent } from './home-page/home-page.component';
 import { MateriaPageComponent } from './materia-page/materia-page.component';
 import { InfoComponent } from './info/info.component';
 import { AjudaComponent } from './ajuda/ajuda.component';
@@ -60,9 +62,6 @@ import { QuimicaComponent } from './materias/quimica/quimica.component';
 import { FisicaComponent } from './materias/fisica/fisica.component';
 import { LiteraturaComponent } from './materias/literatura/literatura.component';
 import { BiologiaComponent } from './materias/biologia/biologia.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-
-
 
 
 
@@ -75,7 +74,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     VerificarEmailComponent,
     EsqueceuSenhaComponent,
     AdminDashboardComponent,
-    HomePageComponent,
+   
     InfoComponent,
     AjudaComponent,
     MateriaPageComponent,
@@ -92,11 +91,12 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     BiologiaComponent,
     LoginComponent,
     CadastroComponent,
-    SidebarComponent,
+    
    
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
@@ -126,6 +126,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     MatDatepickerModule,
     MatFormFieldModule,
     IvyCarouselModule,
+    NgbModule,
+    DragDropModule,
     
   ],
   providers: [],
