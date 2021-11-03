@@ -129,6 +129,7 @@ import { BiologiaComponent } from './materias/biologia/biologia.component';
     NgbModule,
     DragDropModule,
     
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

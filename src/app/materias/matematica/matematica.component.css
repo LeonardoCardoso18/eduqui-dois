@@ -6,6 +6,13 @@
     margin: 20px;
   }
   
+  .content {
+    
+    background:hsla(205, 46%, 30%, 1);
+    background: linear-gradient(90deg, hsla(205, 46%, 30%, 1) 0%, hsla(260, 29%, 36%, 1)100%);
+   
+  
+  }
   .dashboard-card {
     position: absolute;
     top: 15px;
