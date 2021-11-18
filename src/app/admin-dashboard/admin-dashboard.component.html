@@ -1,1 +1,160 @@
-<p>admin-dashboard works!</p>
+<body>
+  <header>
+    <div class="text-container">
+      <h1>Bem vindo admin</h1>
+      <span></span>
+    </div> 
+  </header>
+
+</body>
+
+<div class="content" style="color: 'primary';">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" >
+    <mat-card>
+      <div class="circle">
+        <h2>01</h2>
+      </div>
+      <mat-card-content>
+        <div class="conteudo">
+          <p>Para adicionar novos conteudos as materias,
+            clique no botão abaixo</p>
+        </div>
+        <button mat-button (click)="adicionarMateria()" >Novos conteudos</button>
+      </mat-card-content>
+    </mat-card>
+    </div>
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" >
+      <mat-card>
+        <div class="circle-dois">
+          <h2>02</h2>
+        </div>
+        <mat-card-content>
+          <div class="conteudo">
+            <p>Para ver os usuários cadastrados, clique no botão abaixo</p>
+          </div>
+          <button class="dois" mat-button (click)="onUsuarios()">Usuários</button>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%">
+      <mat-card>
+        <div class="circle-tres">
+          <h2>03</h2>
+        </div>
+        <mat-card-content>
+          <div class="conteudo">
+            <p>Para inserir videos, clique no botão abaixo</p>
+          </div>
+          <button class="tres"mat-button (click)="onVideos()">Videos</button>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
+
+<!-- Materias -->
+<ng-container *ngIf="materias">
+  <div class="content" style="margin-top: 10px;">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="100%" >
+        <mat-card class="mat-elevation-z4, form" >
+          <div class="circulo">
+          </div>
+          <mat-card-header>
+            <h3 style="font-size: 1.5em;">Cadastro de Conteúdos</h3>
+          </mat-card-header>
+          <div class="row mb-4 px-3">
+            <form (submit)="onMaterias(materiasForm)" #materiasForm="ngForm">
+              <mat-form-field appearance="fill">
+                <mat-label>Escolha a matéria</mat-label>
+                <mat-select [(ngModel)]="selectedValue" ngModel name="materia"  #materiaInput="ngModel" required>
+                  <mat-option *ngFor="let materias of materia" [value]="materias.value">
+                    {{materias.viewValue}}
+                  </mat-option>
+                </mat-select>
+                <mat-error *ngFor="materiaInput.invalid">Escolha uma Matéria</mat-error>
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput name="titulo" ngModel #tituloInput="ngModel" type="text" placeholder="Título"
+                required email>
+                <mat-error *ngIf="tituloInput.invalid">Digite um titulo</mat-error>
+              </mat-form-field>
+              <mat-form-field>
+                  <textarea matInput name="conteudo" ngModel #conteudoInput="ngModel" type="text" id="form7" 
+                  class="md-textarea md-textarea-auto form-control" placeholder="Conteúdo" required></textarea>               
+              </mat-form-field>
+              <div class="mb-3 form-check">
+  
+              <button  class="button" mat-raised-button color="primary" type="submit" appearance="fill">
+              Enviar
+              </button> 
+              </div>
+            </form>
+          </div>
+          
+          <mat-card-actions>
+            
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>  
+  
+</ng-container>
+<!-- Usuarios -->
+<ng-container *ngIf="usuarios">
+  <div class="content" style="margin-top: 15px;">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="100%" >
+        <mat-card class="mat-elevation-z4, form" >
+          <div class="circulo-dois">
+          </div>
+          <mat-card-header>
+            <h3 style="font-size: 2em;">Usuários</h3>
+          </mat-card-header>
+          <div class="row mb-4 px-3">
+            
+            <mat-expansion-panel></mat-expansion-panel>
+  
+              <button  class="button-dois" mat-raised-button color="primary" type="submit" appearance="fill">
+              Enviar
+              </button>                          
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>  
+</ng-container>
+<!-- Videos -->
+<ng-container *ngIf="videos">
+  <div class="content" style="margin-top: 15px;">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid">
+      <div fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="100%" >
+        <mat-card class="mat-elevation-z4, form" >
+          <div class="circulo-tres">
+          </div>
+          <mat-card-header>
+            <h3 style="font-size: 2em;">Usuários</h3>
+          </mat-card-header>
+          <div class="row mb-4 px-3">
+            
+            <mat-expansion-panel></mat-expansion-panel>
+  
+              <button  class="button-tres" mat-raised-button color="primary" type="submit" appearance="fill">
+              Enviar
+              </button> 
+             
+            
+          </div>
+        </mat-card>
+      </div>
+    </div>
+  </div>  
+  
+</ng-container>
+
+
+ 
+
+

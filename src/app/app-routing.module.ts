@@ -13,6 +13,7 @@ import {MateriaPageComponent} from './materia-page/materia-page.component';
 import {ExerciciosComponent} from './exercicios/exercicios.component';
 import {LoginComponent} from './login-cadastro/login/login.component';
 import {CadastroComponent} from './login-cadastro/cadastro/cadastro.component';
+import {QuizComponent} from './quiz/quiz.component'
 
 // materias
 import { MatematicaComponent } from './materias/matematica/matematica.component';
@@ -40,6 +41,7 @@ const routes: Routes = [
   {path: 'esqueceu-senha', component: EsqueceuSenhaComponent},
   {path: 'ajuda', component: AjudaComponent},
   {path: 'info', component: InfoComponent},
+  {path: 'quiz', component: QuizComponent},
   
   {path: 'exercicios', component: ExerciciosComponent},
   {path: 'materia/matematica', component: MatematicaComponent},

@@ -18,7 +18,8 @@ import {FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {DragDropModule} from '@angular/cdk/drag-drop';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 // Components
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -32,6 +33,7 @@ import { InfoComponent } from './info/info.component';
 import { AjudaComponent } from './ajuda/ajuda.component';
 import { LoginComponent } from './login-cadastro/login/login.component';
 import { CadastroComponent } from './login-cadastro/cadastro/cadastro.component';
+import {ExerciciosComponent} from './exercicios/exercicios.component'
 // Angular Material
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -50,6 +52,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
 // materias component
 import { MatematicaComponent } from './materias/matematica/matematica.component';
 import { PortuguesComponent } from './materias/portugues/portugues.component';
@@ -62,6 +65,9 @@ import { QuimicaComponent } from './materias/quimica/quimica.component';
 import { FisicaComponent } from './materias/fisica/fisica.component';
 import { LiteraturaComponent } from './materias/literatura/literatura.component';
 import { BiologiaComponent } from './materias/biologia/biologia.component';
+import { QuizComponent } from './quiz/quiz.component';
+import { ChangeBgDirective } from './change-bg.directive';
+
 
 
 
@@ -74,7 +80,7 @@ import { BiologiaComponent } from './materias/biologia/biologia.component';
     VerificarEmailComponent,
     EsqueceuSenhaComponent,
     AdminDashboardComponent,
-   
+    ExerciciosComponent,
     InfoComponent,
     AjudaComponent,
     MateriaPageComponent,
@@ -91,6 +97,9 @@ import { BiologiaComponent } from './materias/biologia/biologia.component';
     BiologiaComponent,
     LoginComponent,
     CadastroComponent,
+    QuizComponent,
+    ChangeBgDirective,
+    
     
    
   ],
@@ -128,10 +137,13 @@ import { BiologiaComponent } from './materias/biologia/biologia.component';
     IvyCarouselModule,
     NgbModule,
     DragDropModule,
+    FontAwesomeModule,
+    MatSelectModule,
     
-   
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  faCoffee = faCoffee;
+ }

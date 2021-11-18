@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 
 @Component({
@@ -8,13 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExerciciosComponent implements OnInit {
 
-  
+  @ViewChild('nome') nameKey!: ElementRef;
 
   constructor() { }
 
   ngOnInit(): void {
-   ;
+   
   }
 
+  starQuiz(){
+    localStorage.setItem("nome", this.nameKey.nativeElement.value);
+  }
 
 }

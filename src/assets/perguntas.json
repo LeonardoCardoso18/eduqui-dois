@@ -1,0 +1,183 @@
+{
+    "perguntas": [{
+            "perguntasTexto": "Quanto é 1+1 ?",
+            "opcoes": [{
+                "texto": "5"
+            },
+            {
+                "texto": "2",
+                "correta": true
+            },
+            {
+                "texto": "10"
+            },
+            {
+                "texto": "4"
+            }
+        ],
+            "explicacao": "number[] is another way of writing Array<number> in TypeScript"
+        },
+        {
+            "perguntasTexto": "Onde fica o Brasil ?",
+            "opcoes": [{
+                "texto": "Asia"
+            },
+            {
+                "texto": "Europa"     
+            },
+            {
+                "texto": "America do Sul",
+                "correta": true
+            },
+            {
+                "texto": "Africa"
+            }
+        ],
+            "explicacao": "O Brasil é localizado na America do Sul"
+        },
+        {
+            "perguntasTexto": "Qual é o elemento de Ouro na tabela periódica ?",
+            "opcoes": [{
+                "texto": "Au",
+                "correta": true
+            },
+            {
+                "texto": "H"     
+            },
+            {
+                "texto": "O"               
+            },
+            {
+                "texto": "Na"
+            }
+        ],
+            "explicacao": "O elemento da tabela que representa ouro é Au"
+        },
+        {
+            "perguntasTexto": "Quando o Brasil foi descoberto ?",
+            "opcoes": [{
+                "texto": "2000"               
+            },
+            {
+                "texto": "1800"     
+            },
+            {
+                "texto": "1900"               
+            },
+            {
+                "texto": "1500",
+                "correta": true
+            }
+        ],
+            "explicacao": "O Brasil foi descoberto em 1500 por Pedro Alvares Cabral"
+        },
+        {
+            "perguntasTexto": "Oual a tradução da palavra school ?",
+            "opcoes": [{
+                "texto": "Escola",
+                "correta": true
+            },
+            {
+                "texto": "Universidade"     
+            },
+            {
+                "texto": "Faculdade"               
+            },
+            {
+                "texto": "Creche"
+            }
+        ],
+            "explicacao": "A tradução de school é escola"
+        },
+        {
+            "perguntasTexto": "Qual é a tradução colores ?",
+            "opcoes": [{
+                "texto": "Colorado"               
+            },
+            {
+                "texto": "Coitado"     
+            },
+            {
+                "texto": "Dores"               
+            },
+            {
+                "texto": "Cores",
+                "correta":true
+            }
+        ],
+            "explicacao": "A tradução de colores é cores"
+        },
+        {
+            "perguntasTexto": "Qual é o elemento de Ouro na tabela periódica",
+            "opcoes": [{
+                "texto": "Au",
+                "correta": true
+            },
+            {
+                "texto": "H"     
+            },
+            {
+                "texto": "O"               
+            },
+            {
+                "texto": "Na"
+            }
+        ],
+            "explicacao": "O elemento da tabela que representa ouro é Au"
+        },
+        {
+            "perguntasTexto": "Qual é o elemento de Ouro na tabela periódica",
+            "opcoes": [{
+                "texto": "Au",
+                "correta": true
+            },
+            {
+                "texto": "H"     
+            },
+            {
+                "texto": "O"               
+            },
+            {
+                "texto": "Na"
+            }
+        ],
+            "explicacao": "O elemento da tabela que representa ouro é Au"
+        },
+        {
+            "perguntasTexto": "Qual é o elemento de Ouro na tabela periódica",
+            "opcoes": [{
+                "texto": "Au",
+                "correta": true
+            },
+            {
+                "texto": "H"     
+            },
+            {
+                "texto": "O"               
+            },
+            {
+                "texto": "Na"
+            }
+        ],
+            "explicacao": "O elemento da tabela que representa ouro é Au"
+        },
+        {
+            "perguntasTexto": "Qual é o elemento de Ouro na tabela periódica",
+            "opcoes": [{
+                "texto": "Au",
+                "correta": true
+            },
+            {
+                "texto": "H"     
+            },
+            {
+                "texto": "O"               
+            },
+            {
+                "texto": "Na"
+            }
+        ],
+            "explicacao": "O elemento da tabela que representa ouro é Au"
+        }
+    ]
+}

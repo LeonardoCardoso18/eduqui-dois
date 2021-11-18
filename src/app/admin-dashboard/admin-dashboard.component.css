@@ -1,0 +1,297 @@
+  
+  mat-form-field {
+    width: 100%;
+  }
+ 
+  
+  .content > mat-card {
+    width: 1000px;
+  }
+  .mat-button {
+    margin-top: 10px;  
+    width: 100%;
+    
+  }
+ 
+/* cabeçalho */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+
+header{
+  width:100%;
+  height: 92vh;
+  background: linear-gradient(90deg, hsla(205, 46%, 30%, 1) 0%, hsla(260, 29%, 36%, 1)100%);
+  background-size: 400% 400%;
+  animation: change 10s ease-in-out infinite;
+  background-position: center center;
+  background-attachment: fixed;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 80%,
+    50% 100%,
+    0 80%
+  );
+  position: absolute;
+}
+
+@keyframes change {
+  0%{
+      background-position: 0 50%;
+  }
+  50%{
+      background-position: 100% 50%;
+  }
+  100%{
+      background-position:0 50%;
+  }
+}
+
+header .text-container{
+  display:block;
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+}
+
+h1{
+  font-size: 5em;
+}
+
+/* Cards */
+
+.content{
+  position: relative;
+  left: 5em;
+}
+
+mat-card{
+position: relative;
+top: 50px;
+width: 300px;
+height: 420px;
+margin: 20px;
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+transition: 0.5s;
+justify-content:center;
+align-items: center;
+}
+
+mat-card .circle {
+position: absolute;
+appearance: fill;
+top: 0;
+left: 0;
+width: 120%;
+background: #000;
+height: 120%;
+clip-path: circle(180px at center 0);
+text-align: center;
+}
+
+mat-card .circle-dois{
+  position: absolute;
+  appearance: fill;
+  top: 0;
+  left: 0;
+  width: 120%;
+  background: rgb(138, 199, 26);
+  height: 120%;
+  clip-path: circle(180px at center 0);
+  text-align: center;
+  
+}
+mat-card .circle-tres{
+  position: absolute;
+  appearance: fill;
+  top: 0;
+  left: 0;
+  width: 120%;
+  background: rgb(221, 221, 18);
+  height: 120%;
+  clip-path: circle(180px at center 0);
+  text-align: center;
+}
+
+mat-card button.dois {
+position: absolute;
+display: inline-block;
+padding: 10px 20px;
+background: #000;
+color: #fff;
+border-radius: 40px;
+text-decoration: none;
+margin-top: 20px;
+left: 6.8em;
+background:rgb(149, 214, 27)
+}
+
+mat-card button.tres{
+position: absolute;
+display: inline-block;
+padding: 10px 20px;
+background: #000;
+color: #fff;
+border-radius: 40px;
+text-decoration: none;
+margin-top: 20px;
+left: 8em;
+background:rgb(221, 221, 21);
+}
+
+mat-card h2 {
+  color: #fff;
+  font-size: 4.5em;
+  padding: 30px 0;
+  justify-content:center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 1.5em;
+  
+}
+
+mat-card .conteudo {
+  position: absolute;
+  bottom: 100px;
+  padding: 20px;
+  text-align: center;
+  page-break-after: 20px;
+}
+
+mat-card button{
+  position: absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  bottom: 10%;
+  margin-top: 20px;
+  left: 5em;
+  background: rgb(40, 40, 117);
+}
+
+.content mat-card:nth-child(1) .circle {
+background: rgb(40, 40, 117);
+}
+
+/* Conteudo */
+
+
+mat-card button.button {
+  position: absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  width: 50%;
+  bottom: 10%;
+  margin-top: 20px;
+  left: -15px;
+  background: rgb(40, 40, 117);
+}
+
+mat-form-field {
+  width: 70%;
+  position: relative;
+  top: 4.5em;
+  
+}
+
+.form{
+  width: 73%;
+  position: absolute;
+  top: 15px;
+}
+
+mat-card .circulo {
+  position: absolute;
+  background: rgb(40, 40, 117);
+  width: 40%;
+  height: 100vh;
+  transform: translate(170%);
+  clip-path: circle(200px at center 0);
+  top: 0;
+  left: 0;
+  right: 15px;
+}
+
+mat-option{
+  background: rgb(27, 27, 27);
+  color:#fff
+}
+
+mat-card .circulo-dois {
+  position: absolute;
+  background:rgb(149, 214, 27);
+  width: 40%;
+  height: 100vh;
+  transform: translate(170%);
+  clip-path: circle(200px at center 0);
+  top: 0;
+  left: 0;
+  right: 15px;
+}
+
+mat-card .circulo-tres {
+  position: absolute;
+  background:rgb(221, 221, 21);
+  width: 40%;
+  height: 100vh;
+  transform: translate(170%);
+  clip-path: circle(200px at center 0);
+  top: 0;
+  left: 0;
+  right: 15px;
+}
+
+mat-card button.button-dois {
+  position: absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  width: 50%;
+  bottom: 10%;
+  margin-top: 20px;
+  left: -15px;
+  background:rgb(149, 214, 27);
+}
+
+mat-card button.button-tres {
+  position: absolute;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  width: 50%;
+  bottom: 10%;
+  margin-top: 20px;
+  left: -15px;
+  background:rgb(221, 221, 21);
+}

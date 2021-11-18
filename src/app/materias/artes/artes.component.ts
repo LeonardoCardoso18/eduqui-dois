@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtesComponent implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit(): void {
